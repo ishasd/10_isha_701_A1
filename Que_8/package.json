@@ -1,0 +1,16 @@
+{
+  "name": "que_8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Running Test...\" && exit 0",
+    "start": "nodemon server.js",
+    "about":"node about.js",
+    "contact":"node contact.js",
+    "home":"node home.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

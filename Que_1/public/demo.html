@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AJAX Call to /gethello</h1>
+  <button onclick="fetchHello()">Click to Get Data</button>
+  <p id="result"></p>
+   <script>
+    function fetchHello() {
+      fetch('/gethello')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('result').innerHTML=data;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+</body>
+</html>
